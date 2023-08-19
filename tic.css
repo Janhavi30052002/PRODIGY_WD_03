@@ -1,113 +1,84 @@
-h1 {
-	color: orangered;
-	margin-bottom: -5px;
-}
-p {
-	margin-bottom: -10px;
-}
-.ui {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.row {
-	display: flex;
-}
-.cell {
-	border: none;
-	width: 80px;
-	height: 80px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 24px;
-	text-align: center;
-	cursor: pointer;
-}
-.cell:active {
-	outline: none;
-}
-/* 3*3 Grid */
-#b1{
-	border-bottom: 1px solid gray;
-	border-right: 1px solid gray;
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Itim', cursive;
 }
 
-#b2 {
-	border-bottom: 1px solid gray;
-	border-right: 1px solid gray;
-	border-left: 1px solid gray;
+.background {
+    background-color: #12181B;
+    height: 100vh;
+    padding-top: 1px;
 }
 
-#b3 {
-	border-bottom: 1px solid gray;
-	border-left: 1px solid gray;
+.title {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0%;
 }
 
-#b4 {
-	border-top: 1px solid gray;
-	border-bottom: 1px solid gray;
-	border-right: 1px solid gray;
-}
-	
-#b5 {
-	border: 1px solid gray;
+.display {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
-#b6 {
-	border-top: 1px solid gray;
-	border-bottom: 1px solid gray;
-	border-left: 1px solid gray;
+.hide {
+    display: none;
 }
 
-#b7 {
-	border-top: 1px solid gray;
-	border-right: 1px solid gray;
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+
 }
 
-#b8 {
-	border-top: 1px solid gray;
-	border-right: 1px solid gray;
-	border-left: 1px solid gray;
+.tile {
+    border: 1px solid white;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
 }
 
-#b9 {
-	border-top: 1px solid gray;
-	border-left: 1px solid gray;
-}
-/* Reset Button */
-#but {
-	box-sizing: border-box;
-	width: 95px;
-	height: 40px;
-	border: 1px solid dodgerblue;
-	margin-left: auto;
-	border-radius: 8px;
-	font-family: Verdana,
-		Geneva, Tahoma, sans-serif;
-
-	background-color: whitesmoke;
-	color: dodgerblue;
-	font-size: 20px;
-	cursor: pointer;
+.playerX {
+    color: #09C372;
 }
 
-/* Player turn space */
-#print {
-	font-family: Verdana,
-		Geneva, Tahoma, sans-serif;
-	color: dodgerblue;
-	font-size: 20px;
+.playerO {
+    color: #498AFB;
 }
 
-/* Main Container */
-#main {
-	text-align: center;
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
 }
 
-/* Game Instruction Text */
-#ins {
-	font-family: Verdana,Geneva,
-					Tahoma, sans-serif;
-	color: dodgerblue;
+.controls button {
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+.restart {
+    background-color: #498AFB;
+}
+
+#reset {
+    background-color: #FF3860;
 }
